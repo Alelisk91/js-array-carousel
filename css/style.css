@@ -15,3 +15,9 @@
     justify-content: center;
     align-items: center;
 }
+
+.items{
+    position: relative;
+    width: 700px;
+    height: 300px;
+}
