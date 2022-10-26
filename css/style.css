@@ -21,3 +21,32 @@
     width: 700px;
     height: 300px;
 }
+
+.prev, .next{
+    display: inline-block;
+    background-color: white;
+    border-radius: 50%;
+    margin: 10px 0;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 999;
+    cursor: pointer;
+}
+
+.item{
+    height: 100%;
+    position: relative;
+}
+
+.item-active{
+    display: block;
+}
+
+.item img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
