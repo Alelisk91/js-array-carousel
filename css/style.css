@@ -22,8 +22,10 @@
     height: 300px;
 }
 
-.prev, .next{
-    display: inline-block;
+.prev{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: white;
     border-radius: 50%;
     margin: 10px 0;
@@ -36,12 +38,30 @@
     cursor: pointer;
 }
 
+.next{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 50%;
+    margin: 10px 0;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 999;
+    cursor: pointer;
+    bottom: 2px;
+}
+
 .item{
     height: 100%;
     position: relative;
+    display: none;
 }
 
-.item-active{
+.active{
     display: block;
 }
 
